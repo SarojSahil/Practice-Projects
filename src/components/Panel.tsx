@@ -13,7 +13,9 @@ const Panel: FC<PanelProps> = ({ activeProject }) => {
                 ?
                 <iframe className="w-full h-full outline-none" src={activeProject.url}></iframe>
                 : 
-                "Please Select A Project"
+                <div className="h-full w-full text-2xl bg-red-50 flex items-center justify-center">
+                    <p>Please select a project from the menu.</p>
+                </div>
             }
         </main>
     );
